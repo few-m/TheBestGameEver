@@ -19,6 +19,18 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        MovementUpdate();
+        JumpUpdate();
+    }
+
+    void FixedUpdate()
+    {
+        MovementFixedUpdate();
+        JumpFixedUpdate();
+    }
+
+    private void MovementUpdate()
+    {
         //Movement
         _moveVector = Vector3.zero;
 
@@ -36,12 +48,15 @@ public class PlayerController : MonoBehaviour
         {
             _moveVector += transform.right;
         }
-        
+
         if (Input.GetKey(KeyCode.A))
         {
             _moveVector -= transform.right;
         }
+    }
 
+    private void JumpUpdate()
+    {
         //Jump
         if (Input.GetKeyDown(KeyCode.Space) && _characterController.isGrounded)
         {
@@ -49,11 +64,15 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    void FixedUpdate()
+    private void MovementFixedUpdate()
     {
         //Movement
         _characterController.Move(_moveVector * speed * Time.deltaTime);
 
+    }
+
+    private void JumpFixedUpdate()
+    {
         //Fall and jump
         _fallVelocity += gravity * Time.fixedDeltaTime;
         _characterController.Move(Vector3.down * _fallVelocity * Time.fixedDeltaTime);

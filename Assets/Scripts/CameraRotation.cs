@@ -19,7 +19,8 @@ public class CameraRotation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.localEulerAngles = new Vector3(0, transform.localEulerAngles.y + Time.deltaTime * RotationSpeed * Input.GetAxis("Mouse X"), 0);
+        var newAngleY = transform.localEulerAngles.y + Time.deltaTime * RotationSpeed * Input.GetAxis("Mouse X");
+        transform.localEulerAngles = new Vector3(0, newAngleY, 0);
 
         var newAngleX = CameraAxisTransform.localEulerAngles.x - Time.deltaTime * RotationSpeed * Input.GetAxis("Mouse Y");
         if (newAngleX > 180)
