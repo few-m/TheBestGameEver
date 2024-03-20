@@ -1546,6 +1546,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6083663060186863962, guid: 685d64b28767f1f43b866b004e318cbb,
+        type: 3}
+      propertyPath: speed
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6083663060186863962, guid: 685d64b28767f1f43b866b004e318cbb,
+        type: 3}
+      propertyPath: jumpforce
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6083663060186863963, guid: 685d64b28767f1f43b866b004e318cbb,
         type: 3}
       propertyPath: maxAngle
@@ -1554,7 +1564,7 @@ PrefabInstance:
     - target: {fileID: 6083663060186863963, guid: 685d64b28767f1f43b866b004e318cbb,
         type: 3}
       propertyPath: minAngle
-      value: -60
+      value: -10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 685d64b28767f1f43b866b004e318cbb, type: 3}
