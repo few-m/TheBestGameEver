@@ -35,6 +35,12 @@ public class PlayerHealth : MonoBehaviour
         GetComponent<FireballCaster>().enabled = false;
         GetComponent<CameraRotation>().enabled = false;
     }
+    public void AddHealth(float amount)
+    {
+        value += amount;
+        value = Mathf.Clamp(value, 0, _maxValue);
+        DrawHealthBar();
+    }
     private void DrawHealthBar()
     {
         valueRectTransform.anchorMax = new Vector2(value / _maxValue, 1);
