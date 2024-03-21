@@ -74,7 +74,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  player: {fileID: 0}
+  player: {fileID: 6083663060186863962, guid: 685d64b28767f1f43b866b004e318cbb, type: 3}
   viewAngle: 90
   damage: 30
 --- !u!114 &3065595857457202412
@@ -90,6 +90,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 100
+  playerProgress: {fileID: 9150008997675010097, guid: 685d64b28767f1f43b866b004e318cbb,
+    type: 3}
 --- !u!136 &3065595857457202413
 CapsuleCollider:
   m_ObjectHideFlags: 0

@@ -496,6 +496,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 267440874}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &657261076 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9150008997675010097, guid: 685d64b28767f1f43b866b004e318cbb,
+    type: 3}
+  m_PrefabInstance: {fileID: 1851522272}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8cf72c99b1a67e40b69e3f1e569e0f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &713356418
 GameObject:
   m_ObjectHideFlags: 0
@@ -1684,6 +1696,11 @@ PrefabInstance:
       propertyPath: minAngle
       value: -10
       objectReference: {fileID: 0}
+    - target: {fileID: 9150008997675010097, guid: 685d64b28767f1f43b866b004e318cbb,
+        type: 3}
+      propertyPath: levels.Array.size
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 685d64b28767f1f43b866b004e318cbb, type: 3}
 --- !u!114 &1854028388 stripped
@@ -2234,6 +2251,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 3065595857457202412, guid: aeb144d9975739b4eaaf5fa2bad02475,
+        type: 3}
+      propertyPath: playerProgress
+      value: 
+      objectReference: {fileID: 657261076}
     - target: {fileID: 3065595857457202414, guid: aeb144d9975739b4eaaf5fa2bad02475,
         type: 3}
       propertyPath: m_RootOrder
